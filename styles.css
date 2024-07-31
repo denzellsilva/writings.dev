@@ -1,0 +1,31 @@
+/* || General Styles */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+  *::before,
+    *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(35, 40, 48);
+}
+
+/* || Typography */
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: rgb(2552, 255, 255)
+}
+
+a {
+  color: rgb(2552, 255, 255)
+}
+
