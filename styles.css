@@ -1,3 +1,8 @@
+/* || Variavbles */
+:root {
+  --main-heading-color: rgb(255, 117, 117);
+}
+
 /* || General Styles */
 html {
   box-sizing: border-box;
@@ -14,7 +19,38 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(35, 40, 48);
+  color: rgb(255, 255, 255);
 }
+
+a {
+  color: rgb(255, 255, 255)
+}
+
+nav a, footer a { 
+  text-decoration: none;
+}
+
+article {
+  background-color: rgb(255, 255, 255);
+}
+
+
+/* Header and Main Navigation */
+/* nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  max-width: 123.6rem;
+  margin: 0 auto;
+}
+
+header li a {
+  padding: 1rem;
+  display: block;
+} */
 
 /* || Typography */
 body {
@@ -22,10 +58,46 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
-  color: rgb(2552, 255, 255)
+  color: rgb(255, 255, 255);
 }
 
-a {
-  color: rgb(2552, 255, 255)
+.logo {
+  font-size: 3rem;
 }
 
+header li {
+  font-size: 2.4rem;
+}
+
+h1 {
+  font-family: "Recursive", "Poppins", Arial, Helvetica, sans-serif;
+  color: var(--main-heading-color);
+  font-size: 7.1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h1 + p {
+  font-size: 2.9rem;
+}
+
+main nav a {
+  font-family: "Recursive", "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.7rem;
+  color: rgb(144, 144, 144);
+}
+
+article {
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+.pagination a {
+  font-size: 2.5rem;
+}
