@@ -288,12 +288,12 @@ main nav {
   position: sticky;
   background-color: var(--main-bg-color);
   top: 6rem;
+  margin-bottom: 5em;
 }
 
 main nav ul {
   display: flex;
   justify-content: center;
-  border-top: 3px solid rgb(77, 77, 77);
 }
 
 main nav a {
@@ -301,6 +301,52 @@ main nav a {
   display: block;
 }
 
-main nav li:nth-of-type(2) {
+.main-nav{
+  border-top: 3px solid rgb(77, 77, 77);
+}
+
+.main-nav li:nth-of-type(2) {
   margin-right: 2rem;
 }
+
+/* Grid Layout styles */
+
+.content {
+  display: grid;
+  max-width: 124.4rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-column-gap: 3rem;
+  column-gap: 3rem;
+  grid-row-gap: 2rem;
+  row-gap: 2rem;
+
+}
+
+article {
+  padding: 2.8rem;
+  border-radius: 3rem;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+}
+
+article > * {
+  margin: 0;
+}
+
+article img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  gap: 1em;
+ }
+
+.pagination {
+  margin-top: 11rem;
+}
+
