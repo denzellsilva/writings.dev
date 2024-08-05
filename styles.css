@@ -174,6 +174,18 @@ article {
   background-color: rgb(255, 255, 255);
 }
 
+.pagination li {
+  border-top: 3px solid rgba(0, 0, 0, 0);
+}
+
+.pagination a.active {
+  color: rgb(255, 117, 117);
+}
+
+.pagination li:has(a.active) {
+  border-top: 3px solid rgb(255, 117, 117);
+}
+
 /* || Typography */
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -347,4 +359,3 @@ article img {
 .pagination {
   margin-top: 11rem;
 }
-
