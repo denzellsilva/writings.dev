@@ -318,9 +318,6 @@ main nav a {
   grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
   grid-column-gap: 3rem;
   column-gap: 3rem;
-  /* grid-row-gap: 2rem;
-  row-gap: 2rem; */
-
 }
 
 article {
