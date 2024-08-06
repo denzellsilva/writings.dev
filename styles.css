@@ -141,6 +141,7 @@
 :root {
   --main-heading-color: rgb(255, 117, 117);
   --main-bg-color: rgb(35, 40, 48);
+  --main-container-width: 123.6rem;
 }
 
 /* || General Styles */
@@ -184,6 +185,24 @@ article {
 
 .pagination li:has(a.active) {
   border-top: 3px solid rgb(255, 117, 117);
+}
+
+.pagination {
+  margin-top: 11rem;
+}
+
+.twitter {
+  background-color: rgb(70, 153, 224);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+footer .container > .twitter {
+  padding-left: calc(2rem + 2rem + 1rem);
+  background-image: url("assets/twitter-logo.svg");
+  background-repeat: no-repeat;
+  background-position: 2rem center;
+  background-size: 2rem 1.6rem;
 }
 
 /* || Typography */
@@ -242,9 +261,6 @@ h3 {
 
 footer {
   font-family: "Source Sans", "Poppins", Arial, Helvetica, sans-serif;
-}
-
-.twitter {
   font-size: 1.9rem;
 }
 
@@ -273,7 +289,7 @@ header a {
 }
 
 header nav {
-  max-width: 123.6rem;
+  max-width: var(--main-container-width);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -356,6 +372,23 @@ article img {
   gap: 1em;
  }
 
-.pagination {
-  margin-top: 11rem;
-}
+ /* Footer styles */
+ footer {
+  border-top: 3px solid rgb(77, 77, 77);
+  padding-top: 4rem;
+  min-height: 20rem;
+ }
+
+ footer .container {
+  max-width: var(--main-container-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+ }
+
+ footer .credits {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+ }
