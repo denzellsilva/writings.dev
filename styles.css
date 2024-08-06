@@ -225,7 +225,7 @@ header li {
 h1 {
   font-family: "Recursive", "Poppins", Arial, Helvetica, sans-serif;
   color: var(--main-heading-color);
-  font-size: 7.1rem;
+  font-size: calc(1.5rem + 4vw);
   font-weight: 400;
   font-style: italic;
   text-align: center;
@@ -426,12 +426,8 @@ article img {
 
   /* || Typography */
 
-  h1 {
-    font-size: 4rem;
-  }
-
   h1 + p, footer .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .pagination a, footer, .main-nav a{
