@@ -275,6 +275,7 @@ nav ul {
 header {
   margin-top: 2rem;
   position: sticky;
+  z-index: 1;
   top: 0;
   background-color: var(--main-bg-color);
 }
@@ -315,7 +316,7 @@ main > :first-child {
 main nav {
   position: sticky;
   background-color: var(--main-bg-color);
-  top: 6rem;
+  top: 6.4rem;
   margin-bottom: 5em;
 }
 
@@ -382,6 +383,8 @@ article img {
  footer .container {
   max-width: var(--main-container-width);
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
   margin: auto;
@@ -391,4 +394,50 @@ article img {
   display: flex;
   align-items: center;
   gap: 3rem;
+ }
+
+ @media screen and (max-width: 81em) {
+  body {
+    padding: 0 1em ;
+  }
+ }
+
+ @media  screen and (max-width: 72em) {
+  main nav {
+    display: block;
+    position: static;
+  }
+
+  .main-nav ul {
+    display: block;
+  }
+ }
+
+ @media screen and (max-width: 36em) {
+  header nav, header ul {
+    display: block;
+  }
+
+  header {
+    position: static;
+  }
+
+  /* || Typography */
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h1 + p, footer .logo {
+    font-size: 2rem;
+  }
+
+  .pagination a, footer, .main-nav a{
+    font-size: 1.5rem;
+  }
+
+  .pagination img {
+    height: 1em;
+    width: 1em;
+  }
  }
